@@ -1,0 +1,4 @@
+1)Create mysql database with 'test' name
+2)Execute 'mvn clean install'
+3)Deploy application on tomcat with VM option 'project.environment=dev'
+4)Now you can access apllication with http://localhost:8080
