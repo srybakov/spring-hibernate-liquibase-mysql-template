@@ -1,3 +1,4 @@
+<%@ page import="com.nnprivate.project.common.Constants" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -24,7 +25,7 @@
         </div>
 
         <div class="login-help">
-            <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+            <p>Forgot your password? <a href="${pageContext.request.contextPath}<%=Constants.RESTORE_PASSWORD%>">Click here to reset it</a>.</p>
         </div>
     </section>
 </body>

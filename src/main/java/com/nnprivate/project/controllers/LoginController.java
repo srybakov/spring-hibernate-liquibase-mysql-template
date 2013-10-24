@@ -26,7 +26,7 @@ public class LoginController {
         if (securityService.isAuthorized()){
             return redirectToView(Constants.USER_CABINET);
         } else {
-            return new ModelAndView(Constants.LOGIN_PAGE);
+            return new ModelAndView(Constants.LOGIN);
         }
 	}
 

@@ -9,7 +9,10 @@ public class Constants {
     public static final String ROLE_ANONYMOUS = "ROLE_ANONYMOUS";
 
     public static final String USER_CABINET = "user-cabinet";
-    public static final String LOGIN_PAGE = "login";
+    public static final String LOGIN = "login";
+    public static final String RESTORE_PASSWORD = "restore-password";
     public static final String LOGIN_ERROR_PAGE = "login-error";
+
+    public static final String SEND_RESTORE_EMAIL_ACTION = "sendRestoreEmail";
 
 }

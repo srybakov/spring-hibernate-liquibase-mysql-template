@@ -16,9 +16,9 @@
 
     <global-method-security secured-annotations="enabled" />
 
-    <beans:bean id="userDetailsService" class="com.nnprivate.project.service.impl.AuthenticationService"/>
+    <beans:bean id="authenticationService" class="com.nnprivate.project.service.impl.AuthenticationService"/>
 
     <authentication-manager alias="authenticationManager">
-        <authentication-provider user-service-ref="userDetailsService" />
+        <authentication-provider user-service-ref="authenticationService" />
     </authentication-manager>
 </beans:beans>
