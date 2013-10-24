@@ -1,8 +1,8 @@
-package com.nnprivate.project.model.sql.dao.impl;
+package com.nnprivate.project.model.dao.impl;
 
 import com.nnprivate.project.common.SortDirection;
-import com.nnprivate.project.model.sql.dao.Dao;
-import com.nnprivate.project.model.sql.domain.Identifiable;
+import com.nnprivate.project.model.dao.Dao;
+import com.nnprivate.project.model.domain.Identifiable;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +16,8 @@ import javax.persistence.Query;
 import java.util.List;
 
 /**
- * 
- * @author Sergey Rybakov
+ *
+ * @author <a href="mailto:sarybako@gmail.com">Sergey Rybakov</a>
  * 
  * @param <PK>
  * @param <E>

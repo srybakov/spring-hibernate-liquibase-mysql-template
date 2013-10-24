@@ -1,7 +1,7 @@
 package com.nnprivate.project.controllers;
 
 import com.nnprivate.project.common.Constants;
-import com.nnprivate.project.model.sql.domain.User;
+import com.nnprivate.project.model.domain.User;
 import com.nnprivate.project.service.SecurityService;
 import com.nnprivate.project.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
+ * @author <a href="mailto:sarybako@gmail.com">Sergey Rybakov</a>
  */
 @Controller
 public class UserCabinetController {

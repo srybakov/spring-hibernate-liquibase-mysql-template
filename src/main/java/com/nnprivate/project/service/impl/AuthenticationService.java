@@ -1,7 +1,7 @@
 package com.nnprivate.project.service.impl;
 
-import com.nnprivate.project.model.sql.domain.User;
-import com.nnprivate.project.model.sql.domain.UserRole;
+import com.nnprivate.project.model.domain.User;
+import com.nnprivate.project.model.domain.UserRole;
 import com.nnprivate.project.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * @author <a href="mailto:srybakov@gmail.com">Sergey Rybakov</a>
+ */
 @Service
 public class AuthenticationService implements UserDetailsService {
 

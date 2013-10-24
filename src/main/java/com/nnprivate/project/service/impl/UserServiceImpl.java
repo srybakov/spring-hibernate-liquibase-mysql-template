@@ -1,8 +1,8 @@
 package com.nnprivate.project.service.impl;
 
-import com.nnprivate.project.model.sql.dao.UserDao;
-import com.nnprivate.project.model.sql.domain.User;
-import com.nnprivate.project.model.sql.domain.UserRole;
+import com.nnprivate.project.model.dao.UserDao;
+import com.nnprivate.project.model.domain.User;
+import com.nnprivate.project.model.domain.UserRole;
 import com.nnprivate.project.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

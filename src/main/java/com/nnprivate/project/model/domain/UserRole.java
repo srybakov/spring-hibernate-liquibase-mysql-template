@@ -1,4 +1,4 @@
-package com.nnprivate.project.model.sql.domain;
+package com.nnprivate.project.model.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

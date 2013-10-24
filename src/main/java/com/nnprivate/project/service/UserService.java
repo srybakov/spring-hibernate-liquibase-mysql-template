@@ -1,7 +1,7 @@
 package com.nnprivate.project.service;
 
-import com.nnprivate.project.model.sql.domain.User;
-import com.nnprivate.project.model.sql.domain.UserRole;
+import com.nnprivate.project.model.domain.User;
+import com.nnprivate.project.model.domain.UserRole;
 
 import java.util.List;
 

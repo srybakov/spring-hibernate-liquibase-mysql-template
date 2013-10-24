@@ -1,6 +1,6 @@
-package com.nnprivate.project.model.sql.dao;
+package com.nnprivate.project.model.dao;
 
-import com.nnprivate.project.model.sql.domain.User;
+import com.nnprivate.project.model.domain.User;
 
 /**
  * @author <a href="mailto:sarybako@gmail.com">Sergey Rybakov</a>

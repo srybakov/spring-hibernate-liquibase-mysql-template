@@ -1,4 +1,4 @@
-package com.nnprivate.project.model.sql.domain;
+package com.nnprivate.project.model.domain;
 
 import java.io.Serializable;
 

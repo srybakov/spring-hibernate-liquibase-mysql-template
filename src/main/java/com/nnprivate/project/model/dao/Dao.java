@@ -1,6 +1,6 @@
-package com.nnprivate.project.model.sql.dao;
+package com.nnprivate.project.model.dao;
 
-import com.nnprivate.project.model.sql.domain.Identifiable;
+import com.nnprivate.project.model.domain.Identifiable;
 
 import java.util.List;
 
