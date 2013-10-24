@@ -12,10 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import static com.nnprivate.project.common.Utils.putParamToModel;
+
 /**
  * @author <a href="mailto:sarybako@gmail.com">Sergey Rybakov</a>
  */
 @Controller
+@RequestMapping(value = Constants.USER_CABINET)
 public class UserCabinetController {
 
     @Autowired
@@ -24,17 +27,13 @@ public class UserCabinetController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = Constants.USER_CABINET_PAGE, method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     public ModelAndView userCabinet(ModelMap model){
         UserDetails userDetails = securityService.getUserDetails();
         User user = userService.findByEmail(userDetails.getUsername());
-        putUserToModel(user, model);
+        putParamToModel(model, "email", user.getEmail());
+        putParamToModel(model, "created", user.getCreated());
 
-        return new ModelAndView(Constants.USER_CABINET_PAGE, model);
-    }
-
-    private void putUserToModel(User user, ModelMap model) {
-        model.put("email", user.getEmail());
-        model.put("created", user.getCreated());
+        return new ModelAndView(Constants.USER_CABINET, model);
     }
 }

@@ -9,10 +9,12 @@
 
     <http use-expressions="true">
         <intercept-url pattern="/user-cabinet/**" access="hasAnyRole('ADMIN', 'USER')" />
-        <form-login login-page="/login" default-target-url="/user-cabinet"
+        <form-login login-page="/" default-target-url="/user-cabinet"
                     authentication-failure-url="/login-failed" />
         <logout logout-success-url="/logout" />
     </http>
+
+    <global-method-security secured-annotations="enabled" />
 
     <beans:bean id="userDetailsService" class="com.nnprivate.project.service.impl.AuthenticationService"/>
 
