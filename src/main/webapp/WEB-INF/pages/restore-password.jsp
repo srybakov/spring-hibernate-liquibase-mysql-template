@@ -10,6 +10,10 @@
         $(document).ready(function() {
             $('#restoreForm').ajaxForm(function() {});
         });
+
+        function returnToLoginPage(){
+            self.location =  "../";
+        }
     </script>
 </head>
 <body>
@@ -29,7 +33,12 @@
                 <div class="login">
                     <h1>Restore password to ProjectName</h1>
                     <p><input type="text" id="email" name="email" placeholder="Enter your email here and click Restore button"></p>
-                    <p class="submit"><input type="submit" name="submit" value="Restore" ></p>
+                    <div>
+                        <p class="submit">
+                            <input type="submit" name="submit" value="Restore" >
+                            <input type="button" name="back" value="Back" onclick="returnToLoginPage()" >
+                        </p>
+                    </div>
                 </div>
             </form>
         </section>

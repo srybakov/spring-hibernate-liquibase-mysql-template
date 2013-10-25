@@ -14,5 +14,6 @@ public class Constants {
     public static final String LOGIN_ERROR_PAGE = "login-error";
 
     public static final String SEND_RESTORE_EMAIL_ACTION = "sendRestoreEmail";
+    public static final String LOGIN_FAILED_ACTION = "loginFailed";
 
 }

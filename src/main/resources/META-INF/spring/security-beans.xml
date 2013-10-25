@@ -10,8 +10,8 @@
     <http use-expressions="true">
         <intercept-url pattern="/user-cabinet/**" access="hasAnyRole('ADMIN', 'USER')" />
         <form-login login-page="/" default-target-url="/user-cabinet"
-                    authentication-failure-url="/login-failed" />
-        <logout logout-success-url="/logout" />
+                    authentication-failure-url="/loginFailed" />
+        <logout logout-success-url="/" />
     </http>
 
     <global-method-security secured-annotations="enabled" />

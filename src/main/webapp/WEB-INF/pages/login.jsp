@@ -11,6 +11,10 @@
     <section class="container">
         <div class="login">
             <h1>Login to ProjectName</h1>
+            <c:if test="${not empty incorrectLogin}">
+                <c:set var="loginFailedMessage" value="${incorrectLogin}"/>
+                <h1 style="font-style: italic; color: red; font-size: small;"><c:out value="${loginFailedMessage}"/></h1>
+            </c:if>
             <form method="POST" action="<c:url value='j_spring_security_check' />" >
                 <p><input type="text" name="j_username" value="" placeholder="Email"></p>
                 <p><input type="password" name="j_password" value="" placeholder="Password"></p>

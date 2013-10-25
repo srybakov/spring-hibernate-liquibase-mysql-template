@@ -8,6 +8,9 @@
 </head>
 <body>
     <section class="container">
+        <a href="<c:url value="j_spring_security_logout"/>" >Logout</a>
+    </section>
+    <section class="container">
         <h4>There are your current credentials</h4>
         <label>Email: ${email}</label></br>
         <label>Created: ${created}</label></br>
