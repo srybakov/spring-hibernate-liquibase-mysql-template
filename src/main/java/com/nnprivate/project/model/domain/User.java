@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author <a href="mailto:srybakov@gmail.com">Sergey Rybakov</a>
+ * @author <a href="mailto:sarybako@gmail.com">Sergey Rybakov</a>
  */
 @Entity
 @Table(name = "user")
