@@ -16,7 +16,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @author <a href="mailto:srybakov@gmail.com">Sergey Rybakov</a>
+ * @author <a href="mailto:sarybako@gmail.com">Sergey Rybakov</a>
  */
 @Service
 public class AuthenticationService implements UserDetailsService {
