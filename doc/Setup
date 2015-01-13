@@ -1,5 +1,5 @@
 1)Create mysql database with 'test' name
-2)Manually create user in 'user' table
-3)Execute 'mvn clean install'
+2)Execute 'mvn clean install'
+3)Manually create user in 'user' table
 4)Deploy application on tomcat with VM option 'project.environment=dev'
 5)Now you can access apllication with http://localhost:8080
